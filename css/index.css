@@ -174,7 +174,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
     'header header header'
-    'hero hero hero hero'
+    'hero hero hero'
     'card card card '
    'footer footer footer';
   grid-gap: 10px;
