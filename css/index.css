@@ -141,6 +141,8 @@ footer {
   text-decoration: underline;
 }
 .btn-lg{
+  Padding: 14px 20px;
+  width: 
 
 }
 
@@ -151,41 +153,82 @@ footer {
   border-radius: 7px;
 }
 .bg-cover
-{ background-image: url('images/autism.jpeg')
+ background-image: url('images/autism.jpeg') {
   background-size: cover;
     height: 100%
     width: 100%
 background-position: ; 
 padding-top: 30px;
 background-origin: content-box;
-background-clip: padding-box;
+background-clip: border-box;
 Padding: 10px;
 background-attachment: initial;
-align:left
+align-content:stretch
 
 
 }
+.jumboCopy{
+  
+}
+.nav{
+  width: auto;
+  height: 200px;
+}
+.donate-btn {
+  margin-left: 250px;
+  font-size: 0px;
+  margin: 3px;
+  margin-top: 35px;
+  float: right;
+  background-color: ;
+}
+.button {
+  justify-content: center;
+  background-color: #80D9BA !important;
+  border-color: #D96C6C;
+  color: white;
+}
+button {
+  justify-content: center;
+  background-color: #80D9BA !important;
+  border-color: #D96C6C;
+  color: white;
 
+}
 .jumbotron{
+  background-image: url('images/autism.jpeg') 
   background-size: contain;
 background-position: center; 
   background-repeat: no-repeat;
-  height: 500px;
+  height: 475px;
+  width:: auto;
   display: grid;
   align-items: center;
   justify-content: center;
   grid-area: 'hero';
+  margin-top: 0px
+  padding:0px
  
 }
 
 
 body {
+  font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-rows: .5fr 1.5fr 1fr .8fr
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
+  grid-template-areas
     'header header header'
     'hero hero hero'
     'card card card '
