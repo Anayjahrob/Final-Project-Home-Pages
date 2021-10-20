@@ -16,9 +16,10 @@ p {
   background-color: #D96C6C !important;
   border: #D96C6C;
 }
-.logo{
+#logo{
   float:left;
   margin:0;
+  padding-left: 0%;
 }
 .dropdown-menu {
   background-color: #D96C6C;
@@ -66,12 +67,12 @@ footer {
 
 .cards
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-  padding: 16px;
+  {padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
   margin: 0 auto;
   max-width: 950px;
-  display: grid;{
+  display: grid;
     background-color: transparent
   grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
   grid-auto-rows: auto;
@@ -86,10 +87,10 @@ footer {
 .card  * {
   box-sizing: border-box;
 }
-<!--
+
 .card__image {
   width: auto;
-  height: 150px;
+  height: auto;
   object-fit: cover;
   display: block;
   border-top: 2px solid #333333;
@@ -109,12 +110,8 @@ footer {
 
 }
 
-.card__content > p:first-of-type 
-  margin-top: 0;
-}
-
-.card__content > p:last-of-type {
-  margin-bottom: 0;
+.card__content >{ p:first-of-type 
+  margin-top: 10px;
 }
 
 .card__info {
@@ -129,7 +126,7 @@ footer {
   border-left: 2px solid #333333;
 }background: #eeeeee;
 
-.card__info i 
+.card__info i {
   font-size: 0.9em;
   margin-right: 8px;
 }
@@ -139,8 +136,12 @@ footer {
   text-decoration: none;
 }
 
+
 .card__link:hover {
   text-decoration: underline;
+}
+.btn-lg{
+
 }
 
 .signUp {
@@ -151,10 +152,18 @@ footer {
 }
 .bg-cover
 { background-image: url('images/autism.jpeg')
-  background-size: contain;
+  background-size: cover;
     height: 100%
-background-position: center; 
+    width: 100%
+background-position: ; 
 padding-top: 30px;
+background-origin: content-box;
+background-clip: padding-box;
+Padding: 10px;
+background-attachment: initial;
+align:left
+
+
 }
 
 .jumbotron{
@@ -184,6 +193,7 @@ body {
   grid-gap: 10px;
   background-color: #ffffff;
   padding: 10px;
+  margin: 15px
 }
 
 .grid-container > div {
