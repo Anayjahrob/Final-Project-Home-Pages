@@ -16,6 +16,10 @@ p {
   background-color: #D96C6C !important;
   border: #D96C6C;
 }
+.logo{
+  float:left;
+  margin:0;
+}
 .dropdown-menu {
   background-color: #D96C6C;
 }
