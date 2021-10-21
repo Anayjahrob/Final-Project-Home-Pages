@@ -3,7 +3,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 p {
   font-family: 'Jura', sans-serif;
-}.nav {
+}
+.nav {
   grid-area: 'header';
   justify-content: center;
   background-color: #D96C6C;
@@ -12,6 +13,11 @@ p {
 .nav button {
   color:#262626;
 }
+
+.dropdown-menu {
+  background-color: #D96C6C;
+}
+
 .btn-danger {
   background-color: #D96C6C !important;
   border: #D96C6C;
@@ -20,6 +26,8 @@ p {
   float:left;
   margin:0;
   padding-left: 0%;
+  vertical-align: middle;
+  justify-content: flex-start;
 }
 .dropdown-menu {
   background-color: #D96C6C;
@@ -37,7 +45,9 @@ row {margin: 0 -5px;}
   clear: both;
 }
 
-
+header{
+  margin: auto;
+}
 
 @media screen and (max-width: 600px) {
   .column {
@@ -45,6 +55,10 @@ row {margin: 0 -5px;}
     display: block;
     margin-bottom: 20px;
   }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 }
 .customNav a{
   color: white, im !important;
@@ -226,17 +240,36 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: .5fr 1.5fr 1fr .8fr
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas
+  grid-template-rows: .5fr 1fr 1.5fr .8fr
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
     'header header header'
-    'hero hero hero'
-    'card card card '
+    'hero hero hero hero'
+    'card card card sidenav '
    'footer footer footer';
   grid-gap: 10px;
   background-color: #ffffff;
   padding: 10px;
   margin: 15px
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  width: 200px;
+  grid-area: 'sidenav';
+  justify-content: flex-end;
+  height: auto;
+}
+
+.sidenav {
+  background-color: #D96C6C;
+  padding:10px;
+  grid-area: 'sidenav';
+  justify-content: flex-end;
 }
 
 .grid-container > div {
