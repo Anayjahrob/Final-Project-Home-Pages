@@ -263,6 +263,7 @@ body {
   grid-area: 'sidenav';
   justify-content: flex-end;
   height: auto;
+  margin-left: 30px;
 }
 
 .sidenav {
