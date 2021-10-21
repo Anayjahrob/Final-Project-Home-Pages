@@ -9,6 +9,7 @@ p {
   justify-content: center;
   background-color: #D96C6C;
   padding: 5px;
+  height: 100px;
 }
 .nav button {
   color:#262626;
